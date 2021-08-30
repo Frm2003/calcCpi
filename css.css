@@ -1,0 +1,212 @@
+*{
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+	border-spacing: 0;
+    font-family: 'Share Tech', sans-serif;
+	outline: none;
+}
+body{
+	width: 100%;
+	height: 100%;
+    background: rgba(33,32,32,1);
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+h2{
+	color: rgba(255,255,255,1);
+}
+/*NAV*/
+nav{
+	width: 100%;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    position: fixed;
+    top: 0;
+}
+nav .aling{
+	width: 50%;
+	height: 5%;
+    padding: 0.5em;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(196,31,20,0.5);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .aling button{
+	width: 100%;
+	border: none;
+	background: none;
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+}
+/*CPI - geral*/
+.cpi, .result, .tempo{
+	width: 70%;
+	height: 363.94px;
+	margin: auto;
+	padding: 0.5em;
+	border: 1px solid rgba(196,31,20,0.5);
+	border-radius: 5px;
+	position: absolute;
+	text-align: center;
+	transition: all 0.5s;
+}
+.cpi .aling img{
+	width: 50%;
+	margin: 0.5em 0em 0.5em 0em;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.aling p{
+	margin: 0.5em 0em 0.5em 0em;
+}
+.result, .tempo{
+    margin-left: -200%;
+    background: rgba(33,32,32,1);
+}
+/*result*/
+.result .words{
+	width: 100%;
+	padding: 0.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+.result .words p{
+	width: 100%;
+	margin: 0em 0.2em 0em 0.2em;
+	font-size: 16px;
+}
+.result .aling .ic{
+	margin-top: 0.5em;
+}
+.result .aling .inputs{
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	overflow-y: scroll;
+}
+.result .aling .inputs .ib{
+	margin: 0em 0em 0em 0.5em;
+}
+.result .aling .inputs input{
+	margin: 0.5em 0em 0.5em 0em;
+}
+/*todos os inputs*/
+input{
+	width: 100%;
+	padding: 0.5em;
+	border: 1px solid rgba(196,31,20,0.5);
+	border-radius: 5px;
+	background: none;
+	color: rgba(255,255,255,0.5);
+}
+/*BOTÕES DO SITE*/
+.btns{
+	width: 100%;
+	margin: 0.5em 0em 0.5em 0em;
+	display: flex;
+}
+.btns button{
+	width: 100%;
+    padding: 0.5em;
+	margin: 0.5em 0em 0.5em 0em;
+    border: none;
+    border-radius: 5px;
+    background: rgba(196,31,20,0.5);
+    color: rgba(255,255,255,1);
+	cursor: pointer;
+}
+.btns .bt1{
+	width: 85%;
+	margin-right: 0.5em;
+}
+.btns .bt2{
+	width: 15%;
+	background-color: rgba(20,96,196,1);
+}
+/*DIVS ALEATÓRIAS*/
+.seta{
+	font-size: 20px;
+	transition: all 0.5s;
+	opacity: 0;
+	position: absolute;
+	left: 10%;
+	bottom: 50%;
+	z-index: 1;
+}
+.versao{
+	padding: 0.5em;
+	border-radius: 0px 5px 0px 0px;
+	background: rgba(196,31,20,1);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+/*SCROLL*/
+::-webkit-scrollbar {
+	width: 1px;
+}
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 700px){
+	nav .aling{
+		width: 20%;
+		height: 3%;
+	}
+	.cpi, .result, .tempo{
+		width: 40%;
+		height: 386.84px;
+	}
+	.result .aling .inputs{
+		height: 210px;	
+	}
+	.seta{
+		left: 27%;
+	}
+}
+@media screen and (min-width: 1200px){
+	nav .aling{
+		height: 4%;
+	}
+	.cpi, .result, .tempo{
+		width: 25%;
+		height: 393.25px;
+	}
+	.result .aling .inputs{
+		height: 210px;	
+	}
+	.seta{
+		left: 35%;
+	}
+}
+@media screen and (min-width: 1500px){
+	nav .aling{
+		width: 15%;
+		height: 4%;
+	}
+	.cpi, .result, .tempo{
+		width: 15%;
+		height: 366.84px;
+	}
+	.result .aling .inputs{
+		height: 190px;	
+	}
+	.seta{
+		left: 41%;
+	}
+}

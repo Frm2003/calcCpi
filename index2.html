@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="load()">
+    <nav>
+        <div class="aling">
+            <button class="btMenu" id="btCpi">cpi</button>
+            <button class="btMenu" id="btTempo">tempo</button>
+        </div>
+    </nav>
+    <div class="cpi">
+        <div class="aling">
+            <h2>calculadora CPI</h2>
+            <img src="img/cal.png">
+            <div>
+                <p>insira a quantidade de inputs</p>
+                <input type="text" class="text" id="cont">
+                <p>Resultado</p>
+                <input type="text" class="text" id="exibir" disabled>
+            </div>
+            <div class="btns">
+                <button class="bt1" id="btn">Enviar</button>
+                <button class="bt2" id="btnCopy"><i class="far fa-copy"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <div class="aling">
+            <div class="title">
+                <h2>Calculo</h2>
+            </div>
+            <input type="text" class="ic" id="ic" placeholder="Num. de intruções">
+            <div class="words">
+                <p>%</p>
+                <p>Cpi</p>
+            </div>
+            <div class="inputs">
+                <div class="ia"></div>
+                <div class="ib"></div>
+            </div>
+            <div class="btns">
+                <button id="btn2">Calcular</button>
+            </div>
+        </div>
+    </div>
+    <div class="tempo">
+        <div class="aling">
+            <h2>calculadora Tempo</h2>
+            <div>
+                <div>
+                    <p>CPI:</p>
+                    <input type="text" class="text" id="cpi">
+                    <p>iC:</p>
+                    <input type="text" class="text" id="ic2">
+                    <p>Clock(ghz):</p>
+                    <input type="text" class="text" id="ghz">
+                    <p>Resultado</p>
+                    <input type="text" class="text" id="exibir2" disabled>
+                </div>
+                <div class="btns">
+                    <button id="btn3">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seta">
+        <label for="ckb">
+            <i class="fas fa-caret-left" id="seta"></i>
+            <input type="checkbox" id="ckb">
+        </label>
+    </div>
+    <div class="versao">
+        <p>Alpha 1.6.6</p>
+    </div>
+</body>
+
+</html>
