@@ -19,6 +19,17 @@ body{
 h2{
 	color: rgba(255,255,255,1);
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 /*NAV*/
 nav{
 	width: 100%;
@@ -146,7 +157,7 @@ input{
 	padding: 0.5em;
 	border-radius: 0px 5px 0px 0px;
 	background: rgba(196,31,20,1);
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 }
