@@ -19,14 +19,11 @@ body{
 h2{
 	color: rgba(255,255,255,1);
 }
-/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -43,6 +40,9 @@ nav .aling{
 	width: 50%;
 	height: 5%;
     padding: 0.5em;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
     border-radius: 0px 0px 10px 10px;
     background: rgba(196,31,20,0.5);
 	display: flex;
@@ -50,11 +50,13 @@ nav .aling{
 	align-items: center;
 }
 nav .aling button{
-	width: 100%;
 	border: none;
 	background: none;
-	color: rgba(255,255,255,1);
+	color: rgba(255,255,255,0.5);
 	cursor: pointer;
+}
+nav .aling button:hover{
+	color: rgba(255,255,255,1);
 }
 /*CPI - geral*/
 .cpi, .result, .tempo{
@@ -99,7 +101,7 @@ nav .aling button{
 	margin-top: 0.5em;
 }
 .result .aling .inputs{
-	height: 200px;
+	height: 195px;
 	display: flex;
 	justify-content: center;
 	overflow-y: scroll;
