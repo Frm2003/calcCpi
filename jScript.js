@@ -73,7 +73,7 @@ function cpiCalc(seta, ic, soma = 0, cpi = 0) {
     seta.style.opacity = "0"
     exibir.value = cpi
 }
-function tempCalc(ghz, ic, t = 0) {
+function tempCalc(ghz, t = 0) {
     let cpi = document.getElementById("cpi")
     let ic2 = document.getElementById("ic2")
     let exibir = document.getElementById("exibir2")
